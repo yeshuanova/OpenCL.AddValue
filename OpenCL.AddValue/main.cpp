@@ -78,7 +78,6 @@ int main(int argc, const char * argv[]) {
         mul_ker.setArg(1, buf_b);
         mul_ker.setArg(2, buf_mul_res);
         
-        
         cout << "Add Kernel to Command Queue" << endl;
         cl::CommandQueue queue(context);
         queue.enqueueNDRangeKernel(add_ker, cl::NullRange, cl::NDRange(data_bytes));
@@ -89,7 +88,7 @@ int main(int argc, const char * argv[]) {
         queue.enqueueReadBuffer(buf_mul_res, CL_TRUE, 0, data_bytes, mul_res.data());
         
         // show data and result
-        cout << "Execute result : " << endl;
+        cout << endl << "Execute result : " << endl;
         cout << boolalpha << endl;
         for (size_t i = 0; i < DATA_SIZE; ++i) {
             cout << "a[" << i << "] = " << val_a[i] << ", ";
@@ -98,13 +97,12 @@ int main(int argc, const char * argv[]) {
             cout << "Multiple : " << mul_res[i] << endl;
         }
         
-        cout << endl << "Run example successfully!" << endl;
+        cout << endl << "Run successfully!" << endl;
     } catch (cl::Error err) {
         cout << "cl::Error:" << endl << err.what() << endl;
     } catch (std::exception e) {
         cout << "std::exception:" << endl << e.what() << endl;
     }
-    
     
     return 0;
 }
