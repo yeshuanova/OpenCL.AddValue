@@ -73,7 +73,7 @@ int main(int argc, const char * argv[]) {
         add_ker.setArg(2, buf_add_res);
         
         // Create multiple_float kernel
-        cl::Kernel mul_ker(program, "multiple_float");
+        cl::Kernel mul_ker(program, "multiply_float");
         mul_ker.setArg(0, buf_a);
         mul_ker.setArg(1, buf_b);
         mul_ker.setArg(2, buf_mul_res);
