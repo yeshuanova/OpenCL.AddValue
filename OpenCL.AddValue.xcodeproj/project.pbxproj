@@ -30,6 +30,7 @@
 		C47B31761B43EE4000B9751E /* cl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cl.hpp; sourceTree = "<group>"; };
 		C47B31771B43EE5300B9751E /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
 		C47B31791B43EE8100B9751E /* cl_kernel.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = cl_kernel.cl; sourceTree = "<group>"; };
+		C4F5D39F1B4530280026049A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +51,7 @@
 				C47B31771B43EE5300B9751E /* OpenCL.framework */,
 				C47B316E1B43EB3100B9751E /* OpenCL.AddValue */,
 				C47B316D1B43EB3100B9751E /* Products */,
+				C4F5D3A01B4530360026049A /* Info */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +70,15 @@
 				C47B31761B43EE4000B9751E /* cl.hpp */,
 				C47B31791B43EE8100B9751E /* cl_kernel.cl */,
 			);
+			path = OpenCL.AddValue;
+			sourceTree = "<group>";
+		};
+		C4F5D3A01B4530360026049A /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				C4F5D39F1B4530280026049A /* README.md */,
+			);
+			name = Info;
 			path = OpenCL.AddValue;
 			sourceTree = "<group>";
 		};
@@ -245,6 +256,7 @@
 				C47B31751B43EB3100B9751E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
