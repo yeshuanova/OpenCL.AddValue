@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C47B31701B43EB3100B9751E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C47B316F1B43EB3100B9751E /* main.cpp */; };
+		C47B31781B43EE5300B9751E /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47B31771B43EE5300B9751E /* OpenCL.framework */; };
+		C47B317A1B43EE8100B9751E /* cl_kernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = C47B31791B43EE8100B9751E /* cl_kernel.cl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C47B316A1B43EB3100B9751E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		C47B316C1B43EB3100B9751E /* OpenCL.AddValue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenCL.AddValue; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47B316F1B43EB3100B9751E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C47B31761B43EE4000B9751E /* cl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cl.hpp; sourceTree = "<group>"; };
+		C47B31771B43EE5300B9751E /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		C47B31791B43EE8100B9751E /* cl_kernel.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = cl_kernel.cl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47B31781B43EE5300B9751E /* OpenCL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +47,7 @@
 		C47B31631B43EB3100B9751E = {
 			isa = PBXGroup;
 			children = (
+				C47B31771B43EE5300B9751E /* OpenCL.framework */,
 				C47B316E1B43EB3100B9751E /* OpenCL.AddValue */,
 				C47B316D1B43EB3100B9751E /* Products */,
 			);
@@ -58,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				C47B316F1B43EB3100B9751E /* main.cpp */,
+				C47B31761B43EE4000B9751E /* cl.hpp */,
+				C47B31791B43EE8100B9751E /* cl_kernel.cl */,
 			);
 			path = OpenCL.AddValue;
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C47B31701B43EB3100B9751E /* main.cpp in Sources */,
+				C47B317A1B43EE8100B9751E /* cl_kernel.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
